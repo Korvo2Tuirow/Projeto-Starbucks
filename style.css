@@ -65,7 +65,7 @@ h2 {
 }
 
 .logo {
-  padding-left: 30px;
+  padding-left: 100px;
 }
 
 .logo img {
@@ -76,6 +76,7 @@ h2 {
 .header--right {
   display: flex;
   align-items: center;
+  margin-right: 50px;
 }
 
 .header--search form {
@@ -133,6 +134,12 @@ h2 {
   font-family: var(--Font-Oswald);
   line-height: 100px;
   margin-bottom: 30px;
+}
+
+.banner p {
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: #fff 1px 1px 5px;
 }
 
 .banner--images img {
@@ -262,6 +269,212 @@ h2 {
 .area03--image01 {
   background-image: url(media/f5.jpg);
   background-size: cover;
+   
+}
+
+/*AREA 04*/
+
+.area04 {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  background-color: #e8e9ee;
   
+}
+
+.area04--content {
+  padding: 150px 80px;
+  background-size: cover;
+  background-position: left;
+ 
+}
+
+.area04--text {
+  margin-bottom: 40px;
+  line-height: 25px;
   
+}
+
+.area04--image01 {
+  background-image: url(media/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+   
+}
+
+/*AREA 05*/
+
+.area05{
+  background-image: url(media/bg4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  background-repeat: no-repeat;
+
+}
+
+/*FOOTER*/
+
+footer{
+  background-color: #333;
+  color: #fff;
+  padding: 80px;
+  text-align: center;
+  line-height: 30px;
+
+}
+
+/*RESPONSIVIDADE*/
+
+@media(max-width:958px) and (min-width:620px){
+  .banner {
+   
+    padding-left: 40px;
+    
+}
+
+  .logo{
+    padding-left: 40px;
+  }
+
+  .header--right {
+        margin-right: 10px;
+  }
+
+  .area01--content, .area02--content, .area03--content, .area04--content{
+    padding: 40px;
+  }
+
+  .banner h1 {
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+  } 
+
+  .area01, .area03, .area04{
+    grid-template-columns: 3fr 2fr ;
+  } 
+  
+  .area02{
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .area05{
+
+    height: 400px;
+    
+  
+  }
+  
+
+
+@media(max-width:619px){
+
+  .banner {
+   
+    padding-left: 20px;
+    
+}
+
+  
+
+  .logo{
+    padding-left: 10px;
+  }
+
+  .header--right {
+        margin-right: 0;
+  }
+
+  .header--menu {
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.banner {
+   
+  padding-left: 20px;
+}
+
+.banner h1 {
+  font-size: 50px;
+  line-height: 40px;
+  
+}
+
+h2{
+  font-size: 30px;
+}
+
+.banner--images img {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--cor1);
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+  .area01--content, .area02--content, .area03--content, .area04--content{
+    padding: 50px 20px;
+
+  } 
+  .area01--image01, .area02--image01, .area03--image01{
+    height: 300px;
+  }
+
+  .area01, .area03, .area04{
+    grid-template-columns: 1fr ;
+  } 
+  
+  .area02{
+    grid-template-columns: 1fr;
+  }
+  .header--search input {
+   
+    width: 200px;
+}
+.area05{
+
+  height: 300px;
+  
+
+}
+
+
+
+}
+
+@media(max-width:457px) and (min-width:358px) {
+  .header--search input {
+   
+    width: 150px;
+}
+
+.banner{
+  height: 400px;
+}
+
+.area01--image01, .area02--image01, .area03--image01{
+  height: 200px;
+}
+}
+
+@media(max-width:357px){
+  .header--search input {
+   
+    width: 85px;
+}
+
+.banner{
+  height: 400px;
+}
+
+.area01--image01, .area02--image01, .area03--image01{
+  height: 200px;
+}
 }
